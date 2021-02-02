@@ -104,7 +104,7 @@ main {
 }
 
 main > section {
-  padding: 3.25em 0;
+  padding: 1.25em 0;
   text-align: center;
 }
 
@@ -263,7 +263,7 @@ footer .attribution {
     background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 3.25em;
+    padding: 2.25em;
   }
   .header__buttons,
   .main__buttons {
@@ -278,9 +278,9 @@ footer .attribution {
   .header__buttons .cta,
   .main__buttons .cta {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 21em;
-            flex: 0 1 21em;
-    padding: 1.25em;
+        -ms-flex: 0 1 15em;
+            flex: 0 1 15em;
+    padding: 1em;
     margin-bottom: 0;
   }
   main {
