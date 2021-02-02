@@ -3,7 +3,9 @@ html {
           box-sizing: border-box;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -15,7 +17,12 @@ body {
   font-size: 1.125rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #4c545d;
   margin: 0;
   padding-top: 1.5em;
@@ -52,7 +59,7 @@ header .cta {
   border: none;
   cursor: pointer;
   padding: 1.25em 3.75em;
-  color: #F5FCFF;
+  color: #f5fcff;
   margin-bottom: 1.5em;
   border-radius: 1.8em;
   font-weight: 600;
@@ -66,26 +73,26 @@ header .cta:focus {
 
 header .cta.cta--cyan {
   background-color: #26baa4;
-  -webkit-box-shadow: 0 3px 5px #5DCCBB;
-          box-shadow: 0 3px 5px #5DCCBB;
+  -webkit-box-shadow: 0 3px 5px #5dccbb;
+          box-shadow: 0 3px 5px #5dccbb;
   border-bottom: 3px solid #23a995;
 }
 
 header .cta.cta--cyan:hover {
-  background-color: #5DCCBB;
+  background-color: #5dccbb;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }
 
 header .cta.cta--blue {
   background-color: #6173ff;
-  -webkit-box-shadow: 0 3px 5px #8896FF;
-          box-shadow: 0 3px 5px #8896FF;
+  -webkit-box-shadow: 0 3px 5px #8896ff;
+          box-shadow: 0 3px 5px #8896ff;
   border-bottom: 3px solid #5261d1;
 }
 
 header .cta.cta--blue:hover {
-  background-color: #8896FF;
+  background-color: #8896ff;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }
@@ -128,7 +135,7 @@ main .cta {
   border: none;
   cursor: pointer;
   padding: 1.25em 3.75em;
-  color: #F5FCFF;
+  color: #f5fcff;
   margin-bottom: 1.5em;
   border-radius: 1.8em;
   font-weight: 600;
@@ -142,32 +149,32 @@ main .cta:focus {
 
 main .cta.cta--cyan {
   background-color: #26baa4;
-  -webkit-box-shadow: 0 3px 5px #5DCCBB;
-          box-shadow: 0 3px 5px #5DCCBB;
+  -webkit-box-shadow: 0 3px 5px #5dccbb;
+          box-shadow: 0 3px 5px #5dccbb;
   border-bottom: 3px solid #23a995;
 }
 
 main .cta.cta--cyan:hover {
-  background-color: #5DCCBB;
+  background-color: #5dccbb;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }
 
 main .cta.cta--blue {
   background-color: #6173ff;
-  -webkit-box-shadow: 0 3px 5px #8896FF;
-          box-shadow: 0 3px 5px #8896FF;
+  -webkit-box-shadow: 0 3px 5px #8896ff;
+          box-shadow: 0 3px 5px #8896ff;
   border-bottom: 3px solid #5261d1;
 }
 
 main .cta.cta--blue:hover {
-  background-color: #8896FF;
+  background-color: #8896ff;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }
 
 footer {
-  background-color: #F5F6F8;
+  background-color: #f5f6f8;
   padding-top: 3.125em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,7 +221,7 @@ footer .footer__nav .nav__link:hover {
 }
 
 footer .footer__nav .nav__link:focus {
-  outline: 2px dotted #F5FCFF;
+  outline: 2px dotted #f5fcff;
 }
 
 footer .footer__icons {
@@ -231,7 +238,7 @@ footer .footer__icons {
 }
 
 footer .footer__icons .icon__img {
-  fill: #4C545C;
+  fill: #4c545c;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }

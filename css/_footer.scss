@@ -1,60 +1,58 @@
 footer {
-    background-color: $light-grey;
-    padding-top: $spacing * 2.5;
+  background-color: $light-grey;
+  padding-top: $spacing * 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    &.logo--small {
+      width: 3.2em;
+      height: 3.2em;
+    }
+  }
+
+  .footer__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: $spacing;
+    padding-top: $spacing + 1;
+    padding-bottom: $spacing * 2.5;
 
-    .logo {
-        
-        &.logo--small {
-            width: 3.2em;
-            height: 3.2em;
-        }
-        
+    .nav__link {
+      transition: all ease-in 300ms;
+
+      &:hover {
+        color: $cyan;
+        transition: all ease-in 300ms;
+      }
+
+      &:focus {
+        outline: 2px dotted $white;
+      }
     }
+  }
 
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: $spacing;
-        padding-top: $spacing + 1;
-        padding-bottom: $spacing * 2.5;
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing;
 
-        .nav__link {
-            transition: all ease-in 300ms;
+    .icon__img {
+      fill: #4c545c;
+      transition: all ease-in 300ms;
 
-            &:hover {
-                color: $cyan;
-                transition: all ease-in 300ms;
-            }
-
-            &:focus {
-                outline: 2px dotted $white;
-            }
-        }
+      &:hover {
+        fill: $cyan;
+        transition: all ease-in 300ms;
+      }
     }
+  }
 
-    .footer__icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: $spacing;
-
-        .icon__img {
-            fill: #4C545C;
-            transition: all ease-in 300ms;
-
-            &:hover {
-                fill: $cyan;
-                transition: all ease-in 300ms;
-            }
-        }
-    }
-
-    .attribution {
-        text-align: center;
-        font-size: $font-size - 0.2;
-    }
+  .attribution {
+    text-align: center;
+    font-size: $font-size - 0.2;
+  }
 }

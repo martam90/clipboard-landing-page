@@ -1,116 +1,111 @@
 @media screen and (min-width: 768px) {
-    header {
-        background-image: url("../images/bg-header-desktop.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding: $spacing + 2;
+  header {
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: $spacing + 2;
+  }
+
+  .header__buttons,
+  .main__buttons {
+    display: flex;
+    justify-content: center;
+    gap: $spacing;
+
+    .cta {
+      flex: 0 1 21em;
+      padding: $spacing;
+      margin-bottom: 0;
+    }
+  }
+
+  main {
+    padding: $spacing + 2;
+
+    .snippets,
+    .access {
+      margin: 0 auto;
+      width: 30em;
+      text-align: center;
+      padding-bottom: $spacing;
     }
 
-    .header__buttons,
-    .main__buttons {
+    .desktop__content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .main__img {
+        position: relative;
+        left: -15%;
+      }
+
+      .desktop__items {
         display: flex;
-        justify-content: center;
-        gap: $spacing;
-
-        .cta {
-            flex: 0 1 21em;
-            padding: $spacing;
-            margin-bottom: 0;
-        }
+        flex-direction: column;
+        text-align: left;
+      }
     }
 
-    main {
-        padding: $spacing + 2;
-
-        .snippets,
-        .access {
-            margin: 0 auto;
-            width: 30em;
-            text-align: center;
-            padding-bottom: $spacing;
-        }
-
-        .desktop__content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;      
-            
-            .main__img {
-                position: relative;
-                left: -15%;
-            }
-
-            .desktop__items {
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-            }
-    
-        }
-
-        .main__icons {
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-            gap: $spacing;
-            padding-top: $spacing;
-        }
-
-        .main__img-logo {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            & > img {
-                padding-bottom: 0;
-            }
-            
-        }
+    .main__icons {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: $spacing;
+      padding-top: $spacing;
     }
 
-    footer {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, auto);
-        padding: $spacing 0;
+    .main__img-logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 
-        .logo {
-            place-self: center;
-        }
+      & > img {
+        padding-bottom: 0;
+      }
+    }
+  }
 
-        .footer__nav {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column: 2 / 4;
-            padding: 0;
+  footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    padding: $spacing 0;
 
-            .link--top {
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-            }
-
-            .link--bottom {
-                grid-column: 1 / 2;
-            }
-
-            .link--top-middle {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-
-        }
-
-        .footer__icons {
-            grid-column: 5 / 6;
-            justify-content: flex-start;
-        }
-
-        .attribution {
-            grid-column: 2 / 5;
-            padding-top: $spacing + 1;
-            padding-bottom: 0;
-        }
+    .logo {
+      place-self: center;
     }
 
-    
+    .footer__nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column: 2 / 4;
+      padding: 0;
+
+      .link--top {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+      .link--bottom {
+        grid-column: 1 / 2;
+      }
+
+      .link--top-middle {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+    }
+
+    .footer__icons {
+      grid-column: 5 / 6;
+      justify-content: flex-start;
+    }
+
+    .attribution {
+      grid-column: 2 / 5;
+      padding-top: $spacing + 1;
+      padding-bottom: 0;
+    }
+  }
 }
