@@ -1,0 +1,26 @@
+header {
+    background-image: url("/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: $spacing + 0.25;
+
+    text-align: center;
+
+    .logo {
+        padding-top: $spacing * 5;
+        padding-bottom: $spacing * 2.5;
+    }
+
+    .cta {
+        @include cta;
+
+        &.cta--cyan {
+            @include cta-cyan;
+        }
+
+        &.cta--blue {
+            @include cta-blue;
+        }
+
+    }
+}

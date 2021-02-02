@@ -1,0 +1,54 @@
+$font-family: 'Bai Jamjuree', sans-serif;
+$font-size: 1.125rem;
+$spacing: 1.25em;
+
+$cyan: hsl(171, 66%, 44%);
+$light-cyan: #5DCCBB;
+$light-blue: hsl(233, 100%, 69%);
+$blueish: #8896FF;
+
+$gray: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+$white: #F5FCFF;
+
+$light-grey: #F5F6F8;
+
+@mixin cta {
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: $spacing $spacing + 2.5;
+    color: #F5FCFF;
+    margin-bottom: $spacing + 0.25;
+    border-radius: 1.8em;
+    font-weight: 600;
+    transition: all ease-in 300ms;
+
+    &:focus {
+        outline: 2px dotted $gray;
+    }
+}
+
+@mixin cta-cyan {
+    background-color: $cyan;
+    box-shadow: 0 3px 5px $light-cyan;
+    border-bottom: 3px solid hsl(171, 66%, 40%);
+
+    &:hover {
+        background-color: $light-cyan;
+        transition: all ease-in 300ms;
+    }
+}
+
+@mixin cta-blue {
+    background-color: $light-blue;
+    box-shadow: 0 3px 5px $blueish;
+    border-bottom: 3px solid hsl(233, 58%, 57%);
+
+    &:hover {
+        background-color: $blueish;
+        transition: all ease-in 300ms;
+    }
+}
