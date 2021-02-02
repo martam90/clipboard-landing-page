@@ -113,6 +113,10 @@ main .main__img {
   height: 100%;
 }
 
+main .main__img-device {
+  width: 100%;
+}
+
 main .main__img-logo {
   display: -webkit-box;
   display: -ms-flexbox;
