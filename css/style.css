@@ -62,6 +62,8 @@ header .cta {
   color: #f5fcff;
   margin-bottom: 1.5em;
   border-radius: 1.8em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.125rem;
   font-weight: 600;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
@@ -138,6 +140,8 @@ main .cta {
   color: #f5fcff;
   margin-bottom: 1.5em;
   border-radius: 1.8em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.125rem;
   font-weight: 600;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
