@@ -2,12 +2,12 @@ header {
   background-image: url("/images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: $spacing + 0.25;
+  padding: $spacing;
 
   text-align: center;
 
   .logo {
-    padding-top: $spacing * 5;
+    padding-top: $spacing * 4;
     padding-bottom: $spacing * 2.5;
   }
 
