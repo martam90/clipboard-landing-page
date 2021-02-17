@@ -14,12 +14,9 @@ $white: #f5fcff;
 
 $light-grey: #f5f6f8;
 
-@mixin cta {
-  display: block;
-  width: 100%;
-  border: none;
+@mixin link {
   cursor: pointer;
-  padding: $spacing $spacing + 2.5;
+  padding: $spacing - 0.5 $spacing + 0.5;
   color: #f5fcff;
   margin-bottom: $spacing + 0.25;
   border-radius: 1.8em;
@@ -33,7 +30,7 @@ $light-grey: #f5f6f8;
   }
 }
 
-@mixin cta-cyan {
+@mixin link-cyan {
   background-color: $cyan;
   box-shadow: 0 3px 5px $light-cyan;
   border-bottom: 3px solid hsl(171, 66%, 40%);
@@ -44,7 +41,7 @@ $light-grey: #f5f6f8;
   }
 }
 
-@mixin cta-blue {
+@mixin link-blue {
   background-color: $light-blue;
   box-shadow: 0 3px 5px $blueish;
   border-bottom: 3px solid hsl(233, 58%, 57%);

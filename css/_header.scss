@@ -1,25 +1,35 @@
 header {
   background-image: url("/images/bg-header-mobile.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   padding: $spacing;
-
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .logo {
     padding-top: $spacing * 4;
     padding-bottom: $spacing * 2.5;
   }
 
-  .cta {
-    @include cta;
+  .header__links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing;
+  }
 
-    &.cta--cyan {
-      @include cta-cyan;
+  .link {
+    @include link;
+    flex-shrink: 0;
+
+    &.link--cyan {
+      @include link-cyan;
     }
 
-    &.cta--blue {
-      @include cta-blue;
+    &.link--blue {
+      @include link-blue;
     }
   }
 }
